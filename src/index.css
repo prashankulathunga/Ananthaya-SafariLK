@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'tailwindcss';
+@plugin "daisyui" {
+    themes: lofi --default;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    h1 {
+        @apply text-[clamp(2.5rem,1.624rem+3.596vw,4.5rem)] leading-[0.95] tracking-tight text-balance;
+    }
+
+    h2 {
+        @apply text-[clamp(2rem,1.342rem+2.632vw,3.5rem)] font-bold leading-tight tracking-tight text-balance;
+    }
+
+    h3 {
+        @apply text-[clamp(1.25rem,1.031rem+0.877vw,1.75rem)] font-semibold leading-tight text-balance;
+    }
+
+    p {
+        @apply text-base leading-7 text-base-content/70 text-pretty;
+    }
+}
+
+@utility border-ts {
+    @apply border border-red-500;
+}
+
+@utility h-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+}
+
+@utility v-padding {
+    @apply py-16 sm:py-20 lg:py-28;
+}
+
+@utility hero-p-txt {
+    @apply text-base leading-7 text-white/85 sm:text-lg;
+}
