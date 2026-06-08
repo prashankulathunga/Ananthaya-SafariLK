@@ -19,11 +19,11 @@
     }
 
     h2 {
-        @apply text-[clamp(2rem,1.342rem+2.632vw,3.5rem)] font-bold leading-tight tracking-tight text-balance;
+        @apply text-[clamp(2rem,1.342rem+2.632vw,3.5rem)] leading-tight tracking-tight text-balance;
     }
 
     h3 {
-        @apply text-[clamp(1.25rem,1.031rem+0.877vw,1.75rem)] font-semibold leading-tight text-balance;
+        @apply text-[clamp(1.25rem,1.031rem+0.877vw,1.75rem)] leading-tight text-balance;
     }
 
     p {
