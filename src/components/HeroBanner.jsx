@@ -4,7 +4,7 @@ import { Card, Link, Button } from '@heroui/react';
 
 export const HeroBanner = () => {
     return (
-        <div>
+        <div className='h-auto'>
             <img
                 src={assets.HeroIMG}
                 alt="Hero_IMG"
@@ -12,24 +12,24 @@ export const HeroBanner = () => {
             />
             <div className="bg-linear-to-br from-stone-900/38 via-stone-950/36 to-stone-700/38 h-screen w-full absolute top-0 left-0 right-0 -z-12" />
 
-            {/* // TODO: Resolve button bug */}
+            {/* // TODO: button bug */}
 
-            <div className="text-white max-w-7xl h-padding mx-auto relative h-screen">
-                <div className="max-w-3xl md:float-end top-1/8 absolute right-4  h-full">
+            <div className="max-w-7xl h-padding mx-auto relative h-screen ">
+                <div className="max-w-4xl md:float-end top-1/4 absolute right-4 h-full">
                     <div className="md:text-right">
                         <div className="flex justify-end gap-2 items-center">
-                            <Grip size={20} className='text-default/68' />
-                            <p className="text-default/68 text-right">
+                            <Grip size={20} className="text-default/72" />
+                            <p className="text-default/72 text-right">
                                 Experienced Drivers | Easy Online Reservation
                             </p>
                         </div>
-                        <h1 className="font-normal"> Book Your Private Safari Today</h1>
-                        <Button variant="primary" className="mt-8 px-5">
-                            Book Now
+                        <h1 className="font-normal text-default"> Book Your Private Safari Today</h1>
+                        <Button variant="primary" className="mt-8 px-5 bg-emerald-950">
+                            Book Your Safari
                         </Button>
 
-                        <div className="flex justify-start md:mt-28">
-                            <Card className="max-w-lg px-4 lg:px-6 py-5 bg-default/16 backdrop-blur-2xl shadow-lg">
+                        <div className="flex justify-end md:mt-40">
+                            <Card className="max-w-lg px-4 lg:px-6 py-5 bg-emerald-950/40 backdrop-blur-sm backdrop-brightness-72 shadow-none">
                                 <Card.Header>
                                     <Card.Description className="text-default/72 text-left sm:text-sm text-xs">
                                         Book private safari jeep tours with experienced drivers,

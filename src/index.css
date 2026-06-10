@@ -33,6 +33,8 @@
     --color-default: oklch(0.94 0.001 286.373);
     --color-default-hover: oklch(0.9108 0.0012 286.1439);
     --color-default-foreground: oklch(0.2103 0.0059 285.8898);
+    --color-button-sp: oklch(0.7329 0.1935 150.81);
+    --color-button-sp-dull: oklch(0.7329 0.1935 150.8066 / 0.2);
 }
 
 @utility border-ts {
@@ -49,4 +51,8 @@
 
 @utility hero-p-txt {
     @apply text-base leading-7 text-white/85 sm:text-lg;
+}
+
+@utility nav-dynamic {
+    @apply bg-emerald-50/32 backdrop-blur-md backdrop-brightness-80 shadow-none
 }
