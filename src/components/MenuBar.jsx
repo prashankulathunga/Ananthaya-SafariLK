@@ -1,7 +1,7 @@
 export const MenuBar = () => {
     return (
         <div>
-            <ul className='menu-horizontal gap-5'>
+            <ul className='flex items-center gap-5'>
                 <li>Home</li>
                 <li>Packages</li>
                 <li>About</li>

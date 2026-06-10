@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import 'tailwindcss';
-@plugin "daisyui" {
-    themes: lofi --default;
-}
+@import '@heroui/styles';
 
 @layer base {
     html {
@@ -11,7 +9,7 @@
     }
 
     body {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
 
     h1 {
@@ -27,8 +25,14 @@
     }
 
     p {
-        @apply text-base leading-7 text-base-content/70 text-pretty;
+        @apply text-base leading-7 text-black/70 text-pretty;
     }
+}
+
+@theme {
+    --color-default: oklch(0.94 0.001 286.373);
+    --color-default-hover: oklch(0.9108 0.0012 286.1439);
+    --color-default-foreground: oklch(0.2103 0.0059 285.8898);
 }
 
 @utility border-ts {

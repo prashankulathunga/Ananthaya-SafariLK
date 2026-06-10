@@ -1,4 +1,5 @@
 import { MenuBar } from './MenuBar';
+import {Button} from "@heroui/react";
 
 export const NavBar = () => {
     return (
@@ -15,7 +16,9 @@ export const NavBar = () => {
                             <MenuBar/>
                         </div>
                         <div className="right lg:block hidden">
-                            <button className="btn btn-active btn-secondary rounded-full">Contact Us</button>
+                            <Button variant='primary' className='bg-black px-5'>
+                                Contact Us
+                            </Button>
                         </div>
                     </div>
                 </nav>
